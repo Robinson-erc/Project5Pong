@@ -11,16 +11,16 @@ import java.awt.event.*;
 
 public class CanvasPanel extends JPanel
 {
-    private final static int X_CORNER = 25;
-    private final static int Y_CORNER = 25;
-    private final static int CANVAS_WIDTH = 400;
-    private final static int CANVAS_HEIGHT = 400;
+    protected final static int X_CORNER = 25;
+    protected final static int Y_CORNER = 25;
+    protected final static int CANVAS_WIDTH = 400;
+    protected final static int CANVAS_HEIGHT = 400;
     
     // private [] Shapes;
-    private Circle circle1;
+    protected Circle circle1;
     //private Circle circle2;
-    private Rectangle2Di Paddle1;
-    private Rectangle2Di Paddle2;
+    protected Rectangle2Di Paddle1;
+    protected Rectangle2Di Paddle2;
     private int frameNumber;
 
     
@@ -120,6 +120,20 @@ public class CanvasPanel extends JPanel
         {
             System.out.println("released");
             Paddle1.SetSpeed(0,0);
+        }
+    }
+    //This method detects collison
+    public static void CollisionDetector(Circle Circle1,Rectangle2Di Paddle1,Rectangle2Di Paddle2,int CANVAS_WIDTH,int CANVAS_HEIGHT){
+        this.Circle1=Circle1;
+        Paddle1=Paddle1;
+        Paddle2=Paddle2;
+        CANVAS_WIDTH=CANVAS_WIDTH;
+        CANVAS_HEIGHT=CANVAS_HEIGHT;
+               
+    }
+    public void CheckCollisions(){
+        if(circle1.GetY()<0||circle1.GetY()+circle1getCanvasHeight()>CANVAS_HEIGHT){
+            
         }
     }
 }
