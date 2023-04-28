@@ -11,8 +11,20 @@ public class Rectangle2Di extends Shape2Di
     
     public Rectangle2Di(){
         super(0,0,0);
-        this.height=40;
-        this.width=40;
+        this.height=20;
+        this.width=20;
+    }
+    public void SetHeight(int height){
+        this.height=height;
+    }
+    public void SetWidth(int width){
+        this.width=width;
+    }
+    public int GetHeight(){
+        return height;
+    }
+    public int GetWidth(){
+        return width;
     }
     
     public Rectangle2Di(int colorIndex,int xPosition, int yPosition,int width,int height){

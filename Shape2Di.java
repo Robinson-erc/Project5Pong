@@ -126,6 +126,12 @@ public abstract class Shape2Di
     public int GetYSpeed(){
         return yVel;
     }
+    public int NegateYSpeed(){
+        return yVel=-yVel;
+    }
+    public int NegateXSpeed(){
+        return xVel=-xVel;
+    }
 
     public void Move(double xDelta, double yDelta){
         this.xPos=xPos;
