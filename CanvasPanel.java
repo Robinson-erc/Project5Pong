@@ -79,6 +79,16 @@ public class CanvasPanel extends JPanel
         int ballY = Ball1.GetY();
         int ballH = Ball1.GetHeight();
         int ballW = Ball1.GetWidth();
+        //Variables for paddle 1 cords
+        int paddle1X= Paddle1.GetX();
+        int paddle1Y= Paddle1.GetY();
+        int paddle1H= Paddle1.GetHeight();
+        int paddle1W= Paddle1.GetWidth();
+        //Variables for paddle 2 cords
+        int paddle2X= Paddle2.GetX();
+        int paddle2Y= Paddle2.GetY();
+        int paddle2H= Paddle2.GetHeight();
+        int paddle2W= Paddle2.GetWidth();
         //ball collision against borders
         if( (ballY > (CANVAS_HEIGHT) ) || (ballY <= 25) ){
             Ball1.NegateYSpeed();
@@ -87,6 +97,7 @@ public class CanvasPanel extends JPanel
             Ball1.NegateXSpeed();
         }
         //Ball Collision with paddles
+        
         
     }
 
