@@ -86,8 +86,7 @@ public class CanvasPanel extends JPanel
         if( (ballX > (CANVAS_WIDTH) ) || (ballX <= 0) ){
             Ball1.NegateXSpeed();
         }
-
-        
+        //Ball Collision with paddles
         
     }
 
